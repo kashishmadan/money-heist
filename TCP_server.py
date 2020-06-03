@@ -1,3 +1,8 @@
+# Designed by Kashish Madan
+# Manipal University Jaipur
+# 179202069 
+# Date 03-06-2020
+
 import socket 
 import threading
 
@@ -24,7 +29,7 @@ def handle_client(conn, addr):
                 connected = False
 
             print(f"[{addr}] {msg}")
-            conn.send("Msg received".encode(FORMAT))
+            conn.send("Message Received!".encode(FORMAT))
 
     conn.close()
         
